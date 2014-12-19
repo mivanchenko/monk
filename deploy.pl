@@ -4,7 +4,7 @@ use strict;
 use warnings;
 
 push my @commands, (
-        'cd /home/monk00/monk.in.ua/monk',
+        'cd /home/monk00/monk.in.ua/www',
         'git checkout HEAD -- .',
         'git pull',
         'cd - >/dev/null',
