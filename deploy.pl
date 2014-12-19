@@ -4,10 +4,8 @@ use strict;
 use warnings;
 
 push my @commands, (
-        'cd /home/monk00/monk.in.ua/monk',
-        'git checkout HEAD -- .',
-        'git pull',
-        'cd - >/dev/null',
+	'git checkout HEAD -- .',
+	'git pull',
 );
 
 my $command = join( ' 2>&1'."\n", @commands );
