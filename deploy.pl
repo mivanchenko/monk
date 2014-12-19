@@ -14,6 +14,6 @@ my $result = qx( $command );
 
 print "Content-Type: text/html\n\n";
 print "<html><body>\n";
-print "$result\n";
+print "<pre>$result</pre>\n";
 print "</body></html>\n";
 
