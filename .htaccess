@@ -1,3 +1,4 @@
 RewriteEngine On
 RewriteBase /
 RewriteRule ^deploy$ http://monk.in.ua/bin/deploy.pl [L,R=301]
+RewriteRule ^deploy.pl$ http://monk.in.ua/bin/deploy.pl [L,R=301]
