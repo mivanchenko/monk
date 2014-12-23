@@ -1,4 +1,15 @@
-RewriteEngine On
-RewriteBase /
-RewriteRule ^/deploy$ http://monk.in.ua/bin/deploy.pl [L,R=301]
-RewriteRule ^/(.*)$ http://monk.in.ua/bin/do.pl?$1 [L,R=301]
+<IfModule mod_rewrite.c>
+	RewriteEngine On
+
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteCond %{REQUEST_FILENAME} !-d
+	RewriteRule ^.pl$ index.html [L]
+
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteCond %{REQUEST_FILENAME} !-d
+	RewriteRule ^deploy$ bin/deploy.pl [L]
+
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteCond %{REQUEST_FILENAME} !-d
+	RewriteRule ^(.*)$ bin/do.pl?$1 [L]
+</IfModule>
