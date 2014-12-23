@@ -6,7 +6,7 @@ use warnings;
 push my @commands, (
 	'git checkout HEAD -- .',
 	'git pull',
-	'chmod 750 bin/*.pl'
+	'chmod 750 *.pl'
 );
 
 my $command = join( ' 2>&1'."\n", @commands );
