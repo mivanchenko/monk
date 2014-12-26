@@ -1,4 +1,6 @@
 - 404 (exit unless)
+- 500 (custom page, rewrite)
+http://stackoverflow.com/questions/15792356/htaccess-errordocument-vs-rewriterule
 - fonts
 - picture header
 - picture footer
