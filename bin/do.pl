@@ -3,10 +3,8 @@
 use strict;
 use warnings;
 
-use CGI;
-
-my $q = CGI->new;
-my ($keyword) = $q->keywords;
+my $keyword = $ENV{'QUERY_STRING'};
+$keyword =~ s/\W//g;
 
 my $map = {
 	'6'    => 'Молитви/Шостопсалміє',
