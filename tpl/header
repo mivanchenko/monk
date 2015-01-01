@@ -14,5 +14,5 @@
 </head>
 <body bgcolor="#FFE0C2">
 
-	<div align="center"><img src="img/vor-monah_25_90.jpg" alt="Монах в Україні" /></div>
+	<div align="center"><img src="img/%pic%" alt="Монах в Україні" /></div>
 	<div ng-app="myApp" data-markdown>
