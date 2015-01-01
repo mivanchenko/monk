@@ -17,7 +17,10 @@ my $map = {
 	},
 };
 
-exit unless exists $map->{$keyword};
+if ( ! exists $map->{$keyword} ) {
+	print "Location: http://monk.in.ua/\n\n";
+	exit;
+}
 
 my $header = do { local( @ARGV, $/ ) = '../tpl/header'; <> };
 my $body   = do { local( @ARGV, $/ ) = "../src/$map->{$keyword}{'src'}"; <> };
