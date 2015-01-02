@@ -13,6 +13,3 @@
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/showdown/0.3.1/showdown.min.js"></script>
 </head>
 <body bgcolor="#FFE0C2">
-
-	<div align="center"><img src="img/%pic%" alt="Монах в Україні" /></div>
-	<div ng-app="myApp" data-markdown>
