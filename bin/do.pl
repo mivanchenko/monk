@@ -18,7 +18,10 @@ my $map = {
 	'narod' => {
 		'src' => 'Молитви/За народ',
 		'pic' => '125502_20_90.jpg',
-	}
+	},
+	'temp' => {
+		'src' => 'temp'
+	},
 };
 
 if ( ! exists $map->{$keyword} ) {
