@@ -7,6 +7,9 @@ my $keyword = $ENV{'QUERY_STRING'};
 $keyword =~ s/\W//g;
 
 my $map = {
+	'temp' => {
+		'src' => 'temp',
+	},
 	'6' => {
 		'src' => 'Молитви/Шостопсалміє',
 		'pic' => 'vor-monah_25_90.jpg',
@@ -19,8 +22,9 @@ my $map = {
 		'src' => 'Молитви/За народ',
 		'pic' => '125502_20_90.jpg',
 	},
-	'temp' => {
-		'src' => 'temp'
+	'spovid' => {
+		'src' => 'Цитати/Сповідь',
+		'pic' => 'upc_50_90.jpg',
 	},
 };
 
