@@ -26,6 +26,9 @@ my $map = {
 		'src' => 'Цитати/Сповідь',
 		'pic' => 'upc_50_90.jpg',
 	},
+	'himn' => {
+		'src' => 'Гімн України',
+	},
 };
 
 if ( ! exists $map->{$keyword} ) {
