@@ -30,6 +30,9 @@ my $map = {
 		'src' => 'Гімн України',
 		'pic' => 'herb_15_90.png',
 	},
+	'shukai' => {
+		'src' => 'Цитати/Шукайте',
+	},
 };
 
 if ( ! exists $map->{$keyword} ) {
