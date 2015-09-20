@@ -33,6 +33,10 @@ my $map = {
 	'shukai' => {
 		'src' => 'Цитати/Шукайте',
 	},
+	'happy' => {
+		'src' => 'Щастя',
+		'pic' => 'vor-monah_25_90.jpg',
+	},
 };
 
 if ( ! exists $map->{$keyword} ) {
