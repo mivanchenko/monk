@@ -41,6 +41,10 @@ my $map = {
 		'src' => 'Душі',
 		'pic' => 'vor-monah_25_90.jpg',
 	},
+	'wife' => {
+		'src' => 'Жінка',
+#		'pic' => 'vor-monah_25_90.jpg',
+	},
 };
 
 if ( ! exists $map->{$keyword} ) {
