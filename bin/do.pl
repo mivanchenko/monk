@@ -43,7 +43,7 @@ my $map = {
 	},
 	'wife' => {
 		'src' => 'Жінка',
-#		'pic' => 'vor-monah_25_90.jpg',
+		'pic' => 'christianmarriage-200x138.jpg',
 	},
 };
 
