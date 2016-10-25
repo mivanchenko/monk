@@ -53,6 +53,7 @@ my $map = {
 	},
 	'dumky' => {
 		'src' => 'Думки',
+		'pic' => 'vor-monah_25_90.jpg',
 	},
 };
 
