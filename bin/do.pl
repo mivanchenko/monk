@@ -9,6 +9,7 @@ $keyword =~ s/\W//g;
 my $map = {
 	'temp' => {
 		'src' => 'temp',
+		'pic' => 'vor-monah_25_90.jpg',
 	},
 	'6' => {
 		'src' => 'Молитви/Шостопсалміє',
@@ -32,6 +33,7 @@ my $map = {
 	},
 	'shukai' => {
 		'src' => 'Цитати/Шукайте',
+		'pic' => 'vor-monah_25_90.jpg',
 	},
 	'happy' => {
 		'src' => 'Щастя',
@@ -47,6 +49,7 @@ my $map = {
 	},
 	'diaka' => {
 		'src' => 'Молитви/Дяка',
+		'pic' => 'vor-monah_25_90.jpg',
 	},
 	'dumky' => {
 		'src' => 'Думки',
