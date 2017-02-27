@@ -28,7 +28,7 @@ my $map = {
 		'pic' => 'upc_50_90.jpg',
 	},
 	'himn' => {
-		'src' => 'Гімн України',
+		'src' => 'anthem',
 		'pic' => 'herb_15_90.png',
 	},
 	'shukai' => {
