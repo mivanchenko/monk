@@ -39,10 +39,6 @@ my $map = {
 		'src' => 'Щастя',
 		'pic' => 'vor-monah_25_90.jpg',
 	},
-	'souls' => {
-		'src' => 'Душі',
-		'pic' => 'vor-monah_25_90.jpg',
-	},
 	'wife' => {
 		'src' => 'Жінка',
 		'pic' => 'christianmarriage-200x138.jpg',
