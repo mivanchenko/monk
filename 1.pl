@@ -42,12 +42,12 @@ my $pages = {
 	happy => {},
 };
 
-my $head_default = '<div align="center"><img src="../img/vor-monah_25_90.jpg"'
+my $head_default = '<div align="center"><img src="../img/sonce.jpg"'
                  . "/></div>\n\n";
 my $foot_default = '';
 
-foreach my $src ( sort keys %{$pages} ) {
-	my $page = $pages->{$src};
+foreach my $keyword ( sort keys %{$pages} ) {
+	my $page = $pages->{$keyword};
 
 	my $header = slurp 'tpl/header';
 	my $footer = slurp 'tpl/footer';
@@ -55,10 +55,10 @@ foreach my $src ( sort keys %{$pages} ) {
 	my $head = $page->{head} || $head_default;
 	my $foot = $page->{foot} || $foot_default;
 
-	my $md   = slurp "src/$src";
+	my $md   = slurp "src/$keyword";
 	my $body = markdown $md;
 
-	my $dest = "html/$src";
+	my $dest = $keyword;
 	open my $dest_fh, '>', $dest
 		or die "Can't open $dest for writing: $!";
 	print $dest_fh join( "\n", $header, $head, $body, $foot, $footer );
