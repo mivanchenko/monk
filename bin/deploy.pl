@@ -7,6 +7,7 @@ push my @commands, (
 	'git checkout master',
 	'git pull',
 	'chmod o-rwx ../.*',
+	'chmod o-rwx ../*',
 );
 
 my $command = join( ' 2>&1'."\n", @commands );
