@@ -6,6 +6,9 @@ use warnings;
 use Perl6::Slurp;
 use Text::MultiMarkdown 'markdown';
 
+my $head_begin = '<div align="center"><img src="../img/';
+my $head_end   = '" /></div>' . "\n\n";
+
 my $pages = {
 #	'6' => {
 #		src => 'Молитви/Шостопсалміє',
@@ -14,22 +17,17 @@ my $pages = {
 #		src => 'Молитви/За народ',
 #		pic => '125502_20_90.jpg',
 #	},
-#	'himn' => {
-#		src => 'anthem',
-#		pic => 'herb_15_90.png',
-#	},
+	'anthem' => {
+		head => $head_begin . 'herb_15_90.png' . $head_end,
+	},
 #	'shukai' => {
 #		src => 'Цитати/Шукайте',
 #	},
-#	'wife' => {
-#		src => 'Жінка',
-#		pic => 'christianmarriage-200x138.jpg',
-#	},
+	'wife' => {
+		head => $head_begin . 'christianmarriage-200x138.jpg' . $head_end,
+	},
 #	'diaka' => {
 #		src => 'Молитви/Дяка',
-#	},
-#	'dumky' => {
-#		src => 'Думки',
 #	},
 #	lyst => {
 #		src => 'Молитви/Лист',
@@ -42,8 +40,7 @@ my $pages = {
 	happy => {},
 };
 
-my $head_default = '<div align="center"><img src="../img/sonce.jpg"'
-                 . "/></div>\n\n";
+my $head_default = $head_begin . 'sonce.jpg' . $head_end;
 my $foot_default = '';
 
 foreach my $keyword ( sort keys %{$pages} ) {
