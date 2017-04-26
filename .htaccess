@@ -3,15 +3,7 @@
 
 	RewriteCond %{REQUEST_FILENAME} !-f
 	RewriteCond %{REQUEST_FILENAME} !-d
-	RewriteRule ^.pl$ index.html [L]
-
-	RewriteCond %{REQUEST_FILENAME} !-f
-	RewriteCond %{REQUEST_FILENAME} !-d
 	RewriteRule ^deploy$ bin/deploy.pl [L]
-
-	RewriteCond %{REQUEST_FILENAME} !-f
-	RewriteCond %{REQUEST_FILENAME} !-d
-	RewriteRule ^(.*)$ bin/do.pl?$1 [L]
 
 	ErrorDocument 500 /tpl/500.html
 </IfModule>
