@@ -7,8 +7,8 @@ push my @commands, (
 	'git checkout master',
 	'git pull',
 	'chmod o-rwx ../* ../.*',
-	'chmod g-rwx ../* ../.git',
-	'chmod g-wx  ../.htaccess',
+	'chmod g-rwx ../.git',
+	'chmod g-wx  ../* ../.htaccess',
 #	"chmod 700 $0",
 );
 
