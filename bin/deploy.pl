@@ -9,6 +9,7 @@ push my @commands, (
 	'chmod o-rwx ../* ../.*',
 	'chmod g-rwx ../* ../.git',
 	'chmod g-wx  ../.htaccess',
+	"chmod 700 $0",
 );
 
 my $command = join( ' 2>&1'."\n", @commands );
