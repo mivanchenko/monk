@@ -18,4 +18,3 @@ print "Content-Type: text/plain\n\n";
 
 my $result = qx( $command );
 print "$result\n";
-print "$0";
