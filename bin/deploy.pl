@@ -6,10 +6,10 @@ use warnings;
 push my @commands, (
 	'git checkout master',
 	'git pull',
-	'chmod o-rwx ../* ../.*',
-	'chmod g-rwx ../.git',
-	'chmod g-wx  ../* ../.htaccess',
-#	"chmod 700 $0",
+	'chmod -R o-rwx ../* ../.*',
+	'chmod -R g-rwx ../.git',
+	'chmod -R g-w ../* ../.htaccess',
+	"chmod 700 $0",
 );
 
 my $command = join( ' 2>&1'."\n", @commands );
