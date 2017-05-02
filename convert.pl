@@ -17,20 +17,16 @@ my $pages = {
 #	'wife' => {
 #		head => $head_begin . 'christianmarriage-200x138.jpg' . $head_end,
 #	},
-	'6' => {},
-#	'narod' => {
-#		src => 'Молитви/За народ',
-#		pic => '125502_20_90.jpg',
-#	},
+#	'6' => {},
+	letter => {
+		head => '<div align="center"><a href="http://molytva.at.ua/index/khresna_doroga/0-65"><img src="../img/sts3-12_15_90.jpg" /></a></div>'
+	},
+	'nation' => {
+		head => $head_begin . '125502_20_90.jpg' . $head_end,
+	},
+	'thank' => {},
 #	'shukai' => {
 #		src => 'Цитати/Шукайте',
-#	},
-#	'diaka' => {
-#		src => 'Молитви/Дяка',
-#	},
-#	lyst => {
-#		src => 'Молитви/Лист',
-#		head => '<div align="center"><a href="http://molytva.at.ua/index/khresna_doroga/0-65"><img src="img/sts3-12_15_90.jpg" alt="Монах в Україні" /></a></div>'
 #	},
 #	'spovid' => {
 #		src => 'Цитати/Сповідь',
