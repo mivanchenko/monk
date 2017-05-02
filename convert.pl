@@ -10,22 +10,21 @@ my $head_begin = '<div align="center"><img src="../img/';
 my $head_end   = '" /></div>' . "\n\n";
 
 my $pages = {
-#	'6' => {
-#		src => 'Молитви/Шостопсалміє',
+#	'anthem' => {
+#		head => $head_begin . 'herb_15_90.png' . $head_end,
 #	},
+#	happy => {},
+#	'wife' => {
+#		head => $head_begin . 'christianmarriage-200x138.jpg' . $head_end,
+#	},
+	'6' => {},
 #	'narod' => {
 #		src => 'Молитви/За народ',
 #		pic => '125502_20_90.jpg',
 #	},
-	'anthem' => {
-		head => $head_begin . 'herb_15_90.png' . $head_end,
-	},
 #	'shukai' => {
 #		src => 'Цитати/Шукайте',
 #	},
-	'wife' => {
-		head => $head_begin . 'christianmarriage-200x138.jpg' . $head_end,
-	},
 #	'diaka' => {
 #		src => 'Молитви/Дяка',
 #	},
@@ -37,7 +36,6 @@ my $pages = {
 #		src => 'Цитати/Сповідь',
 #		head => '<div align="center"><a href="http://www.cerkva.info/uk/publications/articles/5873-pronyzylyva-spovid-divchyny-z-rukhu-qza-yedynu-pomisnu-tserkvuq.html" title='Пронизлива сповідь дівчини з руху "За Єдину Помісну Церкву"' target=_blank><img src="img/upc_50_90.jpg" alt="Церква.info: Офіційний веб-сайт УПЦ Київського Патріархату" border="0" /></a></div>'
 #	},
-	happy => {},
 };
 
 my $head_default = $head_begin . 'sonce.jpg' . $head_end;
