@@ -13,7 +13,7 @@ my $pages = {
 #	'anthem' => {
 #		head => $head_begin . 'herb_15_90.png' . $head_end,
 #	},
-#	happy => {},
+#	'happy' => {},
 #	'wife' => {
 #		head => $head_begin . 'christianmarriage-200x138.jpg' . $head_end,
 #	},
@@ -24,8 +24,8 @@ my $pages = {
 #	'nation' => {
 #		head => $head_begin . '125502_20_90.jpg' . $head_end,
 #	},
-#	'thanking' => {},
-	'serb' => {},
+	'thank' => {},
+#	'serb' => {},
 #	'shukai' => {
 #		src => 'Цитати/Шукайте',
 #	},
