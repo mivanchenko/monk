@@ -24,7 +24,7 @@ my $pages = {
 #	'nation' => {
 #		head => $head_begin . '125502_20_90.jpg' . $head_end,
 #	},
-	'thank' => {},
+#	'thank' => {},
 #	'serb' => {},
 #	'shukai' => {
 #		src => 'Цитати/Шукайте',
