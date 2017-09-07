@@ -10,22 +10,23 @@ my $head_begin = '<div align="center"><img src="../img/';
 my $head_end   = '" /></div>' . "\n\n";
 
 my $pages = {
-	'anthem' => {
-		head => $head_begin . 'herb_15_90.png' . $head_end,
-	},
-	'happy' => {},
-	'wife' => {
-		head => $head_begin . 'christianmarriage-200x138.jpg' . $head_end,
-	},
-	'6' => {},
-	'letter' => {
-		head => '<div align="center"><a href="http://molytva.at.ua/index/khresna_doroga/0-65"><img src="../img/sts3-12_15_90.jpg" /></a></div>'
-	},
-	'nation' => {
-		head => $head_begin . '125502_20_90.jpg' . $head_end,
-	},
-	'thank' => {},
-	'serb' => {},
+#	'anthem' => {
+#		head => $head_begin . 'herb_15_90.png' . $head_end,
+#	},
+#	'happy' => {},
+#	'wife' => {
+#		head => $head_begin . 'christianmarriage-200x138.jpg' . $head_end,
+#	},
+#	'6' => {},
+#	'letter' => {
+#		head => '<div align="center"><a href="http://molytva.at.ua/index/khresna_doroga/0-65"><img src="../img/sts3-12_15_90.jpg" /></a></div>'
+#	},
+#	'nation' => {
+#		head => $head_begin . '125502_20_90.jpg' . $head_end,
+#	},
+#	'thank' => {},
+#	'serb' => {},
+	'ukr-sins' => {},
 #	'shukai' => {
 #		src => 'Цитати/Шукайте',
 #	},
