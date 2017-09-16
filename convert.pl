@@ -6,38 +6,29 @@ use warnings;
 use Perl6::Slurp;
 use Text::MultiMarkdown 'markdown';
 
-my $head_begin = '<div align="center"><img src="../img/';
-my $head_end   = '" /></div>' . "\n\n";
-
 my $pages = {
 	'anthem' => {
-		head => $head_begin . 'herb_15_90.png' . $head_end,
+		face => 'herb_15_90.png',
 	},
 	'happy' => {},
 	'wife' => {
-		head => $head_begin . 'christianmarriage-200x138.jpg' . $head_end,
+		face => 'christianmarriage-200x138.jpg',
 	},
 	'6' => {},
 	'letter' => {
 		head => '<div align="center"><a href="http://molytva.at.ua/index/khresna_doroga/0-65"><img src="../img/sts3-12_15_90.jpg" /></a></div>'
 	},
 	'nation' => {
-		head => $head_begin . '125502_20_90.jpg' . $head_end,
+		face => '125502_20_90.jpg',
 	},
 	'thank' => {},
 	'serb' => {},
 	'ukr-sins' => {},
-#	'shukai' => {
-#		src => 'Цитати/Шукайте',
-#	},
-#	'spovid' => {
-#		src => 'Цитати/Сповідь',
-#		head => q{'<div align="center"><a href="http://www.cerkva.info/uk/publications/articles/5873-pronyzylyva-spovid-divchyny-z-rukhu-qza-yedynu-pomisnu-tserkvuq.html" title='Пронизлива сповідь дівчини з руху "За Єдину Помісну Церкву"' target=_blank><img src="img/upc_50_90.jpg" alt="Церква.info: Офіційний веб-сайт УПЦ Київського Патріархату" border="0" /></a></div>'}
-#	},
 };
 
-my $head_default = $head_begin . 'sonce.jpg' . $head_end;
-my $foot_default = '';
+my $head_begin   = '<div align="center"><img src="../img/';
+my $face_default = 'sonce.jpg';
+my $head_end     = '" /></div>' . "\n\n";
 
 foreach my $keyword ( sort keys %{$pages} ) {
 	my $page = $pages->{$keyword};
@@ -45,8 +36,19 @@ foreach my $keyword ( sort keys %{$pages} ) {
 	my $header = slurp 'tpl/header';
 	my $footer = slurp 'tpl/footer';
 
-	my $head = $page->{head} || $head_default;
-	my $foot = $page->{foot} || $foot_default;
+	my $head;
+
+	if ( $page->{head} ) {
+		$head = $page->{head};
+	}
+	elsif ( $page->{face} ) {
+		$head = $head_begin . $page->{face} . $head_end;
+	}
+	else {
+		$head = $head_begin . $face_default . $head_end;
+	}
+
+	my $foot = $page->{foot} || '';
 
 	my $md   = slurp "src/$keyword";
 	my $body = markdown $md;
