@@ -7,22 +7,23 @@ use Perl6::Slurp;
 use Text::MultiMarkdown 'markdown';
 
 my $pages = {
-	'anthem' => {
+	anthem => {
 		face => 'herb_15_90.png',
 	},
-	'happy' => {},
-	'wife' => {
+	happy => {},
+	wife => {
 		face => 'christianmarriage-200x138.jpg',
 	},
-	'6' => {},
-	'letter' => {
+	6 => {},
+	letter => {
 		head => '<div align="center"><a href="http://molytva.at.ua/index/khresna_doroga/0-65"><img src="../img/sts3-12_15_90.jpg" /></a></div>'
 	},
-	'nation' => {
+	morning => {},
+	nation => {
 		face => '125502_20_90.jpg',
 	},
-	'thank' => {},
-	'serb' => {},
+	thank => {},
+	serb => {},
 	'ukr-sins' => {},
 };
 
