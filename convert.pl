@@ -25,6 +25,7 @@ my $pages = {
 	thank => {},
 	serb => {},
 	'ukr-sins' => {},
+	'from-v' => {},
 };
 
 my $head_begin   = '<div align="center"><img src="../img/';
