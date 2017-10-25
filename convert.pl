@@ -13,6 +13,7 @@ my $pages = {
 	},
 	evening => {},
 	'from-v' => {},
+	'from-kuksha' => {},
 	happy => {},
 	letter => {
 		head => '<div align="center"><a href="http://molytva.at.ua/index/khresna_doroga/0-65"><img src="../img/sts3-12_15_90.jpg" /></a></div>'
