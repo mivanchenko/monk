@@ -11,6 +11,7 @@ my $pages = {
 	anthem => {
 		face => 'herb_15_90.png',
 	},
+	christen => {},
 	evening => {},
 	'from-v' => {},
 	'from-kuksha' => {},
