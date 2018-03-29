@@ -23,6 +23,7 @@ my $pages = {
 	nation => {
 		face => '125502_20_90.jpg',
 	},
+	'pestov-sppb' => {},
 	serb => {},
 	thank => {},
 	'ukr-sins' => {},
