@@ -13,6 +13,7 @@ my $pages = {
 	},
 	christen => {},
 	evening => {},
+	'from-bible' => {},
 	'from-v' => {},
 	'from-kuksha' => {},
 	happy => {},
