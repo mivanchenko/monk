@@ -25,6 +25,7 @@ my $pages = {
 		face => '125502_20_90.jpg',
 	},
 	'pestov-sppb' => {},
+	protest => {},
 	serb => {},
 	thank => {},
 	'ukr-sins' => {},
@@ -57,7 +58,11 @@ foreach my $keyword ( sort keys %{$pages} ) {
 
 	my $foot = $page->{foot} || '';
 
-	my $md   = slurp "src/$keyword";
+	my $md;
+	eval { $md = slurp "src/$keyword" };
+	if ( $@ ) {
+		$md = slurp "src/$keyword.md"
+	}
 	my $body = markdown $md;
 
 	my $dest = $keyword;
