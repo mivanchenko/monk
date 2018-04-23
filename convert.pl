@@ -24,7 +24,7 @@ my $pages = {
 	nation => {
 		face => '125502_20_90.jpg',
 	},
-	'pestov-sppb' => {},
+	pestov => {},
 	protest => {},
 	serb => {},
 	thank => {},
@@ -66,6 +66,9 @@ foreach my $keyword ( sort keys %{$pages} ) {
 	my $body = markdown $md;
 
 	my $dest = $keyword;
+	if ( $keyword eq 'pestov' ) {
+		$dest = 'pestov/index.html';
+	}
 	open my $dest_fh, '>', $dest
 		or die "Can't open $dest for writing: $!";
 	print $dest_fh join( "\n", $header, $head, $body, $foot, $footer );
