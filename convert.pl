@@ -27,7 +27,6 @@ my $pages = {
 	protest => {},
 	serb => {},
 	thank => {},
-	'ukr-sins' => {},
 	wife => {
 		face => 'christianmarriage-200x138.jpg',
 	},
