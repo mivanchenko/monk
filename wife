@@ -7,8 +7,7 @@
 </head>
 <body>
 
-<div align="center"><img src="../img/christianmarriage-200x138.jpg" /></div>
-
+<p><img src="../img/christianmarriage-200x138.jpg" alt="img" id="img" /></p>
 
 <ul>
 <li><p>У Євангелії від Луки 17:26-29 читаємо:</p>
@@ -74,7 +73,6 @@
    коли залишиться так, за моєю порадою; а думаю, що i я маю Духа Божого.</em></p>
 </blockquote></li>
 </ul>
-
 
 </body>
 </html>
