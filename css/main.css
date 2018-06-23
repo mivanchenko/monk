@@ -1,4 +1,9 @@
+@font-face {
+	font-family: azbuka;
+	src: url(/fonts/Azbuka01.ttf);
+}
+
 body {
 	color: #324851;
-	font-family: Azbuka01, Georgia, serif;
+	font-family: azbuka, Georgia, serif;
 }
