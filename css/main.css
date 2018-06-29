@@ -9,7 +9,7 @@ body {
 	font-size: 190%;
 }
 
-@media (max-width:540px) {
+@media (min-width:540px) {
 	body {
 		color: #324851;
 		font-family: azbuka, Georgia, serif;
