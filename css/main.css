@@ -1,4 +1,17 @@
+@font-face {
+	font-family: azbuka;
+	src: url(/fonts/Azbuka01.ttf);
+}
+
 body {
 	color: #324851;
-	font-family: Georgia, serif;
+	font-family: azbuka, Georgia, serif;
+}
+
+@media screen and (max-width:350px) {
+	body {
+		color: #324851;
+		font-family: azbuka, Georgia, serif;
+		font-size: 160%;
+	}
 }
