@@ -6,13 +6,5 @@
 body {
 	color: #324851;
 	font-family: azbuka, Georgia, serif;
-	font-size: 100%;
-}
-
-@media (min-width:540px) {
-	body {
-		color: #324851;
-		font-family: azbuka, Georgia, serif;
-		font-size: 167%;
-	}
+	font-size: 167%;
 }
