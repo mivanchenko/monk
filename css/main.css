@@ -9,7 +9,7 @@ body {
 	font-size: 190%;
 }
 
-@media screen and (max-width:150px) {
+@media screen and (max-width:750px) {
 	body {
 		color: #324851;
 		font-family: azbuka, Georgia, serif;
