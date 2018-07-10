@@ -5,7 +5,7 @@ use warnings;
 
 push my @commands, (
 	'git checkout master',
-	'git pull',
+	'git pull --rebase',
 	'chmod -R o-rwx ../* ../.*',
 	'chmod -R g-rwx ../.git',
 	'chmod -R g-w ../* ../.htaccess',
