@@ -8,6 +8,22 @@
 	<style>
 		body {
 			font-family: Georgia, Times, "Times New Roman", serif;
+			font-size: 1.15em;
+		}
+		td {
+			padding-left: 5px;
+			padding-bottom: 5px;
+		}
+		span {
+			height: auto;
+			position: relative;
+			float: right;
+			vertical-align: "middle";
+			text-align: "right";
+		}
+		button {
+			float: left;
+			vertical-align: "middle";
 		}
 	</style>
 </head>
@@ -24,6 +40,9 @@
 <tr><td><span>у́</span></td><td><button></button></td></tr>
 <tr><td><span>ю́</span></td><td><button></button></td></tr>
 <tr><td><span>я́</span></td><td><button></button></td></tr>
+</table>
+<br>
+<table>
 <tr><td><span>А́</span></td><td><button></button></td></tr>
 <tr><td><span>Е́</span></td><td><button></button></td></tr>
 <tr><td><span>Є́</span></td><td><button></button></td></tr>
@@ -66,9 +85,18 @@
 				var msg = ok ? 'ok' : 'failed';
 				console.log('Copy command was ' + msg);
 				this.innerHTML = result_text;
+
+				span_font = span.style.fontWeight;
+				button_font = button.style.fontWeight;
+				span.style.fontWeight = "900";
+				button.style.fontWeight = "900";
+
 				setTimeout(function(){
 					button.innerHTML = action_text;
 					window.getSelection().removeRange(range);
+
+					span.style.fontWeight = span_font;
+					button.style.fontWeight = button_font;
 				}, 3000);
 			} catch(err) {
 				console.log('Oops, unable to copy');
