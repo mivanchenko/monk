@@ -13,27 +13,69 @@
 </head>
 <body>
 
-<p>а́</p>
-<p>е́</p>
-<p>є́</p>
-<p>и́</p>
-<p>і́</p>
-<p>ї́</p>
-<p>о́</p>
-<p>у́</p>
-<p>ю́</p>
-<p>я́</p>
+<table>
+<tr><td><span>а́</span></td><td><button></button></td></tr>
+<tr><td><span>е́</span></td><td><button></button></td></tr>
+<tr><td><span>є́</span></td><td><button></button></td></tr>
+<tr><td><span>и́</span></td><td><button></button></td></tr>
+<tr><td><span>і́</span></td><td><button></button></td></tr>
+<tr><td><span>ї́</span></td><td><button></button></td></tr>
+<tr><td><span>о́</span></td><td><button></button></td></tr>
+<tr><td><span>у́</span></td><td><button></button></td></tr>
+<tr><td><span>ю́</span></td><td><button></button></td></tr>
+<tr><td><span>я́</span></td><td><button></button></td></tr>
+<tr><td><span>А́</span></td><td><button></button></td></tr>
+<tr><td><span>Е́</span></td><td><button></button></td></tr>
+<tr><td><span>Є́</span></td><td><button></button></td></tr>
+<tr><td><span>И́</span></td><td><button></button></td></tr>
+<tr><td><span>І́</span></td><td><button></button></td></tr>
+<tr><td><span>Ї́</span></td><td><button></button></td></tr>
+<tr><td><span>О́</span></td><td><button></button></td></tr>
+<tr><td><span>У́</span></td><td><button></button></td></tr>
+<tr><td><span>Ю́</span></td><td><button></button></td></tr>
+<tr><td><span>Я́</span></td><td><button></button></td></tr>
+</table>
 
-<p>А́</p>
-<p>Е́</p>
-<p>Є́</p>
-<p>И́</p>
-<p>І́</p>
-<p>Ї́</p>
-<p>О́</p>
-<p>У́</p>
-<p>Ю́</p>
-<p>Я́</p>
+<script>
+	let action_text = 'Скопіювати';
+	let result_text = 'Скопійовано!';
 
+	document.querySelectorAll('tr').forEach(function(tr) {
+		let curr_span = null;
+		let curr_button = null;
+		tr.querySelectorAll('span').forEach(function(span) {
+			curr_span = span;
+		});
+		tr.querySelectorAll('button').forEach(function(button) {
+			button.innerHTML = action_text;
+			curr_button = button;
+		});
+		if ( curr_span && curr_button ) {
+			listen(curr_span, curr_button, action_text, result_text);
+		}
+	});
+
+	function listen (span, button, action_text, result_text) {
+		button.addEventListener('click', function(event) {
+			window.getSelection().removeAllRanges();
+			var range = document.createRange();
+			range.selectNode(span);
+			window.getSelection().addRange(range);
+			try {
+				var ok = document.execCommand('copy');
+				var msg = ok ? 'ok' : 'failed';
+				console.log('Copy command was ' + msg);
+				this.innerHTML = result_text;
+				setTimeout(function(){
+					button.innerHTML = action_text;
+					window.getSelection().removeRange(range);
+				}, 3000);
+			} catch(err) {
+				console.log('Oops, unable to copy');
+			}
+			window.getSelection().removeRange(range);
+		});
+	}
+</script>
 </body>
 </html>
