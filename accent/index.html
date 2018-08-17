@@ -85,19 +85,10 @@
 				var msg = ok ? 'ok' : 'failed';
 				console.log('Copy command was ' + msg);
 				this.innerHTML = result_text;
-
-				span_font = span.style.fontWeight;
-				button_font = button.style.fontWeight;
-				span.style.fontWeight = "900";
-				button.style.fontWeight = "900";
-
 				setTimeout(function(){
 					button.innerHTML = action_text;
 					window.getSelection().removeRange(range);
-
-					span.style.fontWeight = span_font;
-					button.style.fontWeight = button_font;
-				}, 3000);
+				}, 1000);
 			} catch(err) {
 				console.log('Oops, unable to copy');
 			}
