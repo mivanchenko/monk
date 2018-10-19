@@ -1,9 +1,0 @@
-<IfModule mod_rewrite.c>
-	RewriteEngine On
-
-	RewriteCond %{REQUEST_FILENAME} !-f
-	RewriteCond %{REQUEST_FILENAME} !-d
-	RewriteRule ^deploy$ bin/deploy.pl [L]
-
-	ErrorDocument 500 /tpl/500.html
-</IfModule>
