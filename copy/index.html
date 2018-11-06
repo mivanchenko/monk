@@ -13,6 +13,13 @@
 		td {
 			padding-left: 5px;
 			padding-bottom: 5px;
+			/* border-style: solid; */
+			border-width: 1px;
+			border-color: green;
+
+			/* center */
+			padding: 3px 0;
+			text-align: center;
 		}
 		span {
 			height: auto;
@@ -25,11 +32,23 @@
 			float: left;
 			vertical-align: "middle";
 		}
+        .floatedTable {
+            float: left;
+        }
+		.inlineTable {
+            display: inline-block;
+        }
+		/*
+		.center {
+			padding: 3px 0;
+			text-align: center;
+		}
+		*/
 	</style>
 </head>
 <body>
 
-<table>
+<table class="inlineTable">
 <tr><td><span>а́</span></td><td><button></button></td></tr>
 <tr><td><span>е́</span></td><td><button></button></td></tr>
 <tr><td><span>є́</span></td><td><button></button></td></tr>
@@ -41,8 +60,7 @@
 <tr><td><span>ю́</span></td><td><button></button></td></tr>
 <tr><td><span>я́</span></td><td><button></button></td></tr>
 </table>
-<br>
-<table>
+<table class="inlineTable">
 <tr><td><span>А́</span></td><td><button></button></td></tr>
 <tr><td><span>Е́</span></td><td><button></button></td></tr>
 <tr><td><span>Є́</span></td><td><button></button></td></tr>
@@ -53,6 +71,13 @@
 <tr><td><span>У́</span></td><td><button></button></td></tr>
 <tr><td><span>Ю́</span></td><td><button></button></td></tr>
 <tr><td><span>Я́</span></td><td><button></button></td></tr>
+</table>
+<table class="inlineTable">
+<tr><td><span>—</span></td><td><button></button></td></tr>
+<tr><td><span>э</span></td><td><button></button></td></tr>
+<tr><td><span>ы</span></td><td><button></button></td></tr>
+<tr><td><span>«</span></td><td><button></button></td></tr>
+<tr><td><span>»</span></td><td><button></button></td></tr>
 </table>
 
 <script>
