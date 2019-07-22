@@ -1,18 +1,24 @@
-/*
 @font-face {
 	font-family: azbuka;
-	src: url(/fonts/Azbuka01.ttf);
+	src: url(../fonts/Azbuka01.ttf);
 }
 
 body {
 	color: #324851;
 	font-family: azbuka, Georgia, serif;
-	font-size: 167%;
+	font-size: 1.15em;
 }
-*/
 
+/*
 body {
 	color: #222;
 	font-family: "PT Serif", Georgia, Times, "Times New Roman", serif;
 	font-size: 1.15em;
+}
+*/
+
+fieldset {
+  border: 1px solid;
+  border-radius: 10px;
+  width: 40%;
 }
